@@ -6,7 +6,7 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white text-gray-900 relative font-sans">
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/1234567890"
+        href="https://wa.me/+1 404-740-6571
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-lg z-50"
