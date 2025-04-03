@@ -3,55 +3,53 @@ import { Button } from "./components/ui/button";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 relative">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white text-gray-900 relative font-sans">
       {/* WhatsApp Floating Button */}
       <a
         href="https://wa.me/1234567890"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50"
+        className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-lg z-50"
         aria-label="Chat on WhatsApp"
       >
         💬
       </a>
 
       {/* Hero Section */}
-      <section className="text-center py-20 px-4 bg-gray-100">
-        <h1 className="text-4xl font-bold mb-4">Fast & Accurate Document Translation Services</h1>
-        <p className="text-lg mb-6 max-w-2xl mx-auto">
-          Certified translations for immigration, legal, academic, and more — delivered fast and hassle-free.
-        </p>
-        <Button className="text-lg px-6 py-3">Get a Free Quote</Button>
+      <section className="text-center py-24 px-6 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-white opacity-50 z-0"></div>
+        <div className="relative z-10">
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-blue-900 mb-4 font-serif">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">DocTranslate</span>
+          </h1>
+          <p className="text-xl md:text-2xl max-w-2xl mx-auto text-gray-600 mb-6">
+            Elegant & Fast Translations for Legal, Immigration, Academic, and Professional Needs.
+          </p>
+          <Button className="text-lg px-8 py-4 rounded-full shadow-md">Get a Free Quote</Button>
+        </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-16 px-4">
-        <h2 className="text-3xl font-semibold text-center mb-10">Our Services</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {[
-            "Certified Translations",
-            "Legal & Immigration Documents",
-            "Academic Transcripts & Diplomas",
-            "Business & Financial Documents",
-            "Personal Letters & Forms",
-            "More upon request"
-          ].map((service, index) => (
-            <div key={index} className="border rounded-2xl p-6 shadow">
-              <h3 className="text-xl font-medium">{service}</h3>
+      <section className="py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-blue-900 font-serif">Our Services</h2>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {["Certified Translations", "Legal & Immigration Documents", "Academic Transcripts & Diplomas", "Business & Financial Documents", "Personal Letters & Forms", "More upon request"].map((service, index) => (
+            <div key={index} className="bg-white border border-gray-200 rounded-2xl p-6 shadow hover:shadow-md transition duration-300">
+              <h3 className="text-xl font-medium text-blue-800">{service}</h3>
             </div>
           ))}
         </div>
       </section>
 
       {/* Language Pairs Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <h2 className="text-3xl font-semibold text-center mb-10">Languages We Translate</h2>
-        <p className="text-center max-w-2xl mx-auto text-lg mb-6">
-          We offer translations among Spanish, Portuguese, French, and Italian — to and from English as well as between each language.
+      <section className="py-20 px-6 bg-blue-50">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-blue-900 font-serif">Languages We Translate</h2>
+        <p className="text-center max-w-2xl mx-auto text-lg text-gray-700 mb-6">
+          Translations between Spanish, Portuguese, French, Italian, and English — accurate and elegant.
         </p>
         <div className="flex flex-wrap justify-center gap-4 text-center">
           {["Spanish", "Portuguese", "French", "Italian", "English"].map((lang, i) => (
-            <span key={i} className="border px-4 py-2 rounded-xl shadow-sm bg-white">
+            <span key={i} className="border border-blue-300 px-4 py-2 rounded-xl shadow-sm bg-white text-blue-900">
               {lang}
             </span>
           ))}
@@ -59,35 +57,35 @@ export default function App() {
       </section>
 
       {/* How It Works */}
-      <section className="bg-white py-16 px-4">
-        <h2 className="text-3xl font-semibold text-center mb-10">How It Works</h2>
+      <section className="bg-white py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-blue-900 font-serif">How It Works</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
           {[
             { step: "1", desc: "Upload your document" },
             { step: "2", desc: "We review and send you a free quote" },
             { step: "3", desc: "Pay and receive your translation in 24–48 hours" }
           ].map(({ step, desc }) => (
-            <div key={step} className="bg-gray-50 rounded-2xl p-6 shadow">
-              <div className="text-4xl font-bold mb-4">{step}</div>
-              <p>{desc}</p>
+            <div key={step} className="bg-blue-50 rounded-2xl p-6 shadow hover:shadow-md transition duration-300">
+              <div className="text-5xl font-bold text-blue-600 mb-4 font-mono">{step}</div>
+              <p className="text-gray-700">{desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* About Us */}
-      <section className="py-16 px-4 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-6">Why Choose Us?</h2>
-        <p className="text-center text-lg">
-          We provide fast, accurate, and confidential translations by professional linguists. Whether you need Spanish, Portuguese, French, or Italian translations — we've got you covered.
+      <section className="py-20 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-6 text-blue-900 font-serif">Why Choose Us?</h2>
+        <p className="text-center text-lg text-gray-700">
+          We provide accurate and confidential translations by professional linguists — beautifully delivered, elegantly formatted, and mobile-optimized. We make your documents speak fluently.
         </p>
       </section>
 
       {/* Contact / Quote Form */}
-      <section className="bg-gray-100 py-16 px-4">
-        <h2 className="text-3xl font-semibold text-center mb-10">Get a Free Quote</h2>
+      <section className="bg-gradient-to-br from-blue-100 to-white py-20 px-6">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-blue-900 font-serif">Get a Free Quote</h2>
         <form
-          className="max-w-xl mx-auto grid gap-4"
+          className="max-w-xl mx-auto grid gap-4 bg-white p-8 rounded-2xl shadow-xl"
           action="https://formsubmit.co/studiolegalsantos@gmail.com"
           method="POST"
           encType="multipart/form-data"
@@ -101,13 +99,13 @@ export default function App() {
           <textarea name="notes" placeholder="Notes" rows="4" className="p-3 border rounded-xl"></textarea>
           <label className="text-sm text-gray-600">Upload your document for a free appraisal:</label>
           <input name="attachment" type="file" className="p-3 border rounded-xl" required />
-          <Button type="submit" className="mt-2">Submit</Button>
+          <Button type="submit" className="mt-2 w-full">Submit</Button>
         </form>
       </section>
 
       {/* Footer */}
       <footer className="text-center py-6 text-sm text-gray-500">
-        © 2025 FastTranslate. All rights reserved. | Página disponible en Español pronto.
+        © 2025 DocTranslate. All rights reserved. | Página disponible en Español pronto.
       </footer>
     </div>
   );
