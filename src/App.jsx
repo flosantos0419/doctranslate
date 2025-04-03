@@ -153,12 +153,8 @@ export default function App() {
 
       <section id="quote-form" className="bg-blue-100 py-16 px-6">
         <h2 className="text-3xl font-semibold text-center mb-10">{t.quoteTitle}</h2>
-        <form
-          className="max-w-xl mx-auto grid gap-4 bg-white p-8 rounded-xl shadow"
-          action="https://formsubmit.co/studiolegalsantos@gmail.com"
-          method="POST"
-          encType="multipart/form-data"
-        >
+        $1
+          <input type="hidden" name="_subject" value="New DocTranslate submission from website" />
           <input type="hidden" name="_next" value="https://www.doctranslate.pro/thank-you.html" />
           <input type="hidden" name="_captcha" value="false" />
 
