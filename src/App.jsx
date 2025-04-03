@@ -13,7 +13,6 @@ const flagEmojis = {
 };
 
 const logoUrl = "https://chat.openai.com/_sandbox/file/00000000605051f79bfe487b405c10eb/A_logo_for_a_company_named_DocTranslate_is_display.png";
-
 const slogan = "Certified translations with elegance & speed.";
 
 const translations = {
