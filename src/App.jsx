@@ -159,7 +159,7 @@ export default function App() {
           method="POST"
           encType="multipart/form-data"
         >
-          <input type="hidden" name="_next" value="https://doctranslate.pro/thank-you.html" />
+          <input type="hidden" name="_next" value="https://www.doctranslate.pro/thank-you.html" />
           <input type="hidden" name="_captcha" value="false" />
 
           <input name="name" type="text" placeholder="Name" className="p-3 border rounded-xl" required />
