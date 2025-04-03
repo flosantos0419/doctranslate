@@ -97,7 +97,8 @@ export default function App() {
       </section>
 
       {/* Contact / Quote Form */}
-      <section className="bg-gradient-to-br from-blue-100 to-white py-20 px-6">
+      <section id="quote-form" className="bg-gradient-to-br from-blue-100 to-white py-20 px-6">
+
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-blue-900 font-serif">Get a Free Quote</h2>
         <form
           className="max-w-xl mx-auto grid gap-4 bg-white p-8 rounded-2xl shadow-xl"
