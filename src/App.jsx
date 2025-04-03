@@ -25,7 +25,16 @@ export default function App() {
           <p className="text-xl md:text-2xl max-w-2xl mx-auto text-gray-600 mb-6">
             Elegant, Certified, and Fast — Translations for Legal, Immigration, Academic, and Business Use.
           </p>
-          <Button className="text-lg px-8 py-4 rounded-full shadow-md">Get a Free Quote</Button>
+          <Button
+  onClick={() => {
+    const formSection = document.getElementById("quote-form");
+    if (formSection) formSection.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="text-lg px-8 py-4 rounded-full shadow-md"
+>
+  Get a Free Quote
+</Button>
+
         </div>
       </section>
 
