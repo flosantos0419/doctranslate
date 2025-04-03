@@ -166,8 +166,8 @@ export default function App() {
           <input name="email" type="email" placeholder="Email" className="p-3 border rounded-xl" required />
           <input name="language" type="text" placeholder="Language pair (e.g., Spanish to English)" className="p-3 border rounded-xl" required />
           <textarea name="notes" placeholder="Notes (mention if urgent)" rows="4" className="p-3 border rounded-xl"></textarea>
-          <label className="text-sm text-gray-600">Upload your document:</label>
-          <input name="attachment" type="file" className="p-3 border rounded-xl" required />
+          <label className="text-sm text-gray-600">Upload your documents:</label>
+          <input name="attachment" type="file" className="p-3 border rounded-xl" required multiple />
           <Button type="submit" className="mt-2 w-full bg-indigo-600 hover:bg-indigo-700">Submit</Button>
         </form>
 
