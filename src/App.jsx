@@ -6,7 +6,7 @@ export default function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white text-gray-900 relative font-sans">
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/+1 404-740-6571
+        href="https://wa.me/14047406571"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-lg z-50"
@@ -26,15 +26,14 @@ export default function App() {
             Elegant, Certified, and Fast — Translations for Legal, Immigration, Academic, and Business Use.
           </p>
           <Button
-  onClick={() => {
-    const formSection = document.getElementById("quote-form");
-    if (formSection) formSection.scrollIntoView({ behavior: "smooth" });
-  }}
-  className="text-lg px-8 py-4 rounded-full shadow-md"
->
-  Get a Free Quote
-</Button>
-
+            onClick={() => {
+              const formSection = document.getElementById("quote-form");
+              if (formSection) formSection.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="text-lg px-8 py-4 rounded-full shadow-md"
+          >
+            Get a Free Quote
+          </Button>
         </div>
       </section>
 
@@ -98,7 +97,6 @@ export default function App() {
 
       {/* Contact / Quote Form */}
       <section id="quote-form" className="bg-gradient-to-br from-blue-100 to-white py-20 px-6">
-
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12 text-blue-900 font-serif">Get a Free Quote</h2>
         <form
           className="max-w-xl mx-auto grid gap-4 bg-white p-8 rounded-2xl shadow-xl"
@@ -117,6 +115,18 @@ export default function App() {
           <input name="attachment" type="file" className="p-3 border rounded-xl" required />
           <Button type="submit" className="mt-2 w-full bg-indigo-600 hover:bg-indigo-700">Submit</Button>
         </form>
+
+        <div className="text-center text-sm text-gray-600 mt-10">
+          💳 <strong>Payment Options:</strong><br />
+          • PayPal: <a href="https://www.paypal.me/flosantos" target="_blank" className="text-blue-700 underline">paypal.me/flosantos</a><br />
+          • Zelle (U.S. only): <span className="font-medium">201-908-7148</span><br />
+          Please include your full name when submitting payment.<br /><br />
+          📩 You will receive an automatic confirmation email once your request is received. We respond within a few hours.
+        </div>
+
+        <div className="text-center text-sm text-gray-500 mt-6 italic">
+          También aceptamos solicitudes en español. Puede escribirnos en su idioma y responderemos con gusto.
+        </div>
       </section>
 
       {/* Footer */}
